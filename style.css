@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 20px ;
+}
+.logo{
+    width:140px;
+    cursor: pointer;
+}
+
+.nav__links{
+    display:flex;
+    gap:20px;
+}
+
+.nav__sign{
+    padding: 10px;
+   
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+}
+.nav__inr{
+    padding: 10px;
+    
+   border:none;
+    color: black;
+    border-radius: 100px;
+    margin-right:10px;
+}
+.section1{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.section2-categories{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search input:focus{
+    outline: none;
+}
+.search{
+   
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+.search input{
+    width:100%;
+    border: none;
+    
+}
+.search button{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+}
+.tripai-image{
+    background-image: linear-gradient(to right, rgb(235, 86, 248) , rgb(241, 197, 236));
+    border-radius: 50px;
+    height:550px;
+    margin-top: 25px;
+    position: relative;
+}
+    
+.tripai-image img{
+    height: 550px;
+    width: 100%;
+    
+}
+.tripai-image__inner{
+    position: absolute;
+    top:20%;
+    left:10%;
+    font-size: 20PX;
+    width:300px;
+    
+}
+.tripai-image button{
+    padding:15px;
+    border-radius: 50px;
+    background-color: rgb(36, 17, 80);
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.staycontainer{
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.product-carousl 
+{
+display:flex;
+overflow-x:auto;
+padding:10px;
+}
+.card{
+margin:10px;
+position: relative;
+
+}
+.card img{
+    width:300px;
+    height:300px;
+    
+    border-radius: 10px;
+    
+}
+/* text overlay */
+  .text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  /* Optional styles for the text */
+  .text-overlay p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 1000;
+
+    color:white;
+  }
+  @media screen and (max-width:700px){
+    
+    .nav__links,.nav__inr{
+        display: none;
+    }
+    .tripai-image{
+        height:350px;
+    }
+    .tripai-image img{
+        height: 300px;
+        width: 100%;
+    }
+    
+        
+  }
+ @media screen and (max-width:800px){
+    body{
+        margin: 15px;
+    }
+    .section2-categories{
+        display: flex;
+        overflow-x:auto;
+        font-size: 20px;
+        justify-content: flex-start;
+        text-wrap: nowrap;
+        }
+        
+       
+ }
+  
+  
+ 
+  
+  @media screen and (min-width:900px){
+    body{
+        margin: 150px;
+        margin-top: 0;
+    }
+    .section2-categories{
+        margin:50px;
+        display: flex;
+            text-wrap: nowrap;
+            gap: 20px;
+            padding: 10px;
+        
+    }
+    }
+    
+  
