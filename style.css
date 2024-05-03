@@ -16,6 +16,9 @@ header{
     
     
 }
+.mbl-nav{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -229,20 +232,12 @@ footer {
 
 @media screen and (max-width:950px){
 
-    .section1-categories{
-    display: flex;
     
-    text-wrap: nowrap;
-    justify-content: flex-start;
-    font-size: 10px;  
-    overflow-x: auto; 
-    width: 90%;
-}
 nav{
     display: flex;
     justify-content: space-between;
     
-    width: 100%;
+    width: 90%;
     
 }
 .nav__links{
@@ -259,8 +254,41 @@ nav{
     width: 90%;
 }
 
+.section1-categories{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 10px;
+    text-wrap: nowrap;   
+}   
+
+
+}
+
+@media screen and (max-width:400px){
+    .mbl-nav{
+        display: block;
+        display: flex;
+    justify-content: space-between;
     
-
-
+    width: 90%;
+    padding: 5px;
+    }
+    .nav__links,.logo,.nav__button{
+       display: none; 
+    }
+    .mbl-logo{
+        width:100px;
+        
+    }
+    .section1-categories{
+        display: flex;
+        
+        text-wrap: nowrap;
+        justify-content: flex-start;
+        font-size: 10px;  
+        overflow-x: auto; 
+        width: 90%;
+    }
 }
 
