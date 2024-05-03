@@ -231,10 +231,12 @@ footer {
 
     .section1-categories{
     display: flex;
-    justify-content: center;
     
-    gap: 10px;
-    font-size: 10px;   
+    text-wrap: nowrap;
+
+    font-size: 10px;  
+    overflow-x: auto; 
+    width: 90%;
 }
 
 .nav__links{
@@ -247,9 +249,13 @@ footer {
 .heading{
     display: none;
 }
-.section1,.section2,.section3,.footer,.nav,.section1-categories{
+.section1,.section2,.section3,.footer{
     width: 90%;
 }
+.nav{
+    width: 100%;
+    padding: 0;
 
+}
 }
 
